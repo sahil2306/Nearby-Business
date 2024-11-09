@@ -1,0 +1,23 @@
+input[type="text"] {
+  font-size:10px;
+}
+#businessList{
+  background-color: white;
+}
+#nov{
+  background-color: white;
+  color: red;
+  height: fit-content;
+  width: fit-content;
+}
+.cd{
+  padding: 2%;
+  width: 40%;
+  border-radius: 5%;
+}
+.required{
+  color: red;
+}
+.mat-tab-header{
+  background-color: yellow;
+}

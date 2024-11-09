@@ -1,0 +1,11 @@
+.bt{
+  border: 0px;
+  background-color: white;
+}
+.na{
+  background-color: white;
+}
+.bt:focus{
+  border: 2px solid black;
+  border-radius: 30%;
+}

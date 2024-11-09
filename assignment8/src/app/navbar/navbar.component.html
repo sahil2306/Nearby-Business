@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-lg na">
+  <div class="container-fluid na">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <button class="nav-link bt" (click)="searchClicked()" style="color: black;" id="search" routerLink="/search">Search</button>
+      </li>
+      <li>
+        <button class="nav-link bt" (click)="bookingsClicked()" style="color: black;" id="bookings" routerLink="/bookings">My Bookings</button>
+      </li>
+  </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+<div *ngIf="isPopulated()">
+  <h1 class="text-center" >List of your reservations</h1>
+  <table class="table table-striped mx-auto">
+    <thead>
+      <th scope="col">#</th>
+      <th scope="col">Business Name</th>
+      <th scope="col">Date</th>
+      <th scope="col">Time</th>
+      <th scope="col">E-mail</th>
+      <th scope="col"></th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let r of data;let c=index">
+        <td><b>{{ c+1 }}</b></td>
+        <td>{{ r.businessName }}</td>
+        <td>{{ r.date }}</td>
+        <td>{{ r.time }}</td>
+        <td>{{ r.email }}</td>
+        <td><button style="background-color:inherit;border:none" type="button" (click)="deleteBooking(r.id)"><i class="bi bi-trash"></i></button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br>
+<div *ngIf="isNotPopulated()" id="no" class="text-center">
+  <h2>No reservations to show</h2>
+</div>
